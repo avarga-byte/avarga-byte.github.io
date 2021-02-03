@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>duuraih site</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .header{
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+        .sticky_to_work{
+            height: 50px;
+        }
+        .trip_advisor_logo{
+            height: 50px;
+            width: 150px;
+        }
+        .search_image{
+            width: 100%;
+            height: 70%;
+            border-radius: 12px;
+        }
+        .header_right_box>div{
+            padding-top: 3px;
+            height: 40px;
+            width: 80px;
+            margin: 5px;
+            font-weight: 700;
+            text-align: center;
+            border: 2px solid white;
+        }
+        .sign_in{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 12px;
+        }
+        .header_right_box>div:hover{
+            border: 2px solid black;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
+        .menu .nav{
+            width: 14%;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            font-weight: 500;
+            color: black;
+            background-color: white;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .nav a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav:hover{
+            background-color: black;
+            color: white;
+        }
+        .nav:hover a{
+            color: white;
+        }
+        .drop_down_menu{
+            display: none;
+        }
+        .drop_menu:hover .drop_down_menu{
+            width: 150px;
+            display: flex;
+            position: absolute;
+            margin-right: 20px;
+            margin-top: 35px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+        .drop_menu:hover .drop_down_menu ul li{
+            list-style: none;
+            margin: 10px;
+            background-color: #e9e8e3;
+        }
+        .drop_menu:hover .drop_down_menu ul li a{
+            color: black;
+            text-decoration: none;
+            margin: none;
+            left: 0;
+        }
+        .search{
+            position: relative;
+        }
+        .search_bar{
+            position: absolute;
+            width: 80%;
+            height: 10%;
+        }
+        .search_logo{
+            position: absolute;
+            left: 10%;
+            bottom: 45%;
+        }
+        .bar{
+            width: 80%;
+            height: 50%;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 0 10px 1px black;
+        }
+        .text{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        /*contents*/
+
+        .content-1{
+            width: 100%;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+        }
+        .content-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10%;
+            background-color: #faf1ed;
+            position: relative;
+        }
+        .content-3{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           margin-top: 10%;
+           background-color: white;
+           position: relative;
+        }
+        .content-4{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #faf1ed;
+            position: relative;
+            margin-top: 10% !important;
+            width: 80%;
+            margin: auto;
+        }
+        .content-5{
+            margin-top: 10%;
+            position: relative;
+        }
+        .display_ads{
+            background-color: #faf1ed;
+        }
+        .adsversiment_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+        .ads{
+            background-color:  white;
+            height: 100%;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .ads>a{
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+        }
+        .gallery{
+            width: 400px;
+        }
+        .moreTo{
+            text-align: center;
+            background-color: black;
+            color: white;
+            position: absolute;
+            padding: 1%;
+            left: 40%;
+            bottom: 100%;
+        }
+        .learn_more{
+            margin-left: 3%;
+        }
+        .learn_more>h1{
+            font-size: 35px;
+        }
+        .learn_more>a{
+            background-color: #0e2c23;
+            font-size: 20px;
+            color: white;
+            height: 50px;
+            width: 100px;
+            border-radius: 5px;
+        }
+        .FromTripAdvisor{
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .dream_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .plan_your_dream{
+            text-align: center;
+            position: absolute;
+            padding: 1%;
+            left: 40%;
+            bottom: 100%;
+        }
+        .dream_place{
+            width: 300px;
+        }
+        .dream{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .abu_dhabi_container{
+            display: flex;
+            flex-direction: row;
+        }
+        .abu_dhabi{
+            text-align: center;
+            background-color: black;
+            color: white;
+            position: absolute;
+            padding: 1%;
+            left: 40%;
+            bottom: 100%;
+            font-size: 30px;
+        }
+        .visit_abu_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .visit_abu_dhabi{
+            text-align: center;
+            font-size: 18px;
+            width: 50%;
+            font-weight: 500;
+        }
+        .abu_dhabi_img{
+            width: 50%;
+        }
+        .see_winner{
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            position: absolute;
+            left: 43%;
+            bottom: 13%;
+        }
+        /*Footer*/
+        .footer{
+            margin-top: 5%;
+            display: flex;
+            background-color: #faf1ed;
+            justify-content: space-between;
+        }
+        .footer div ul{
+            text-emphasis: none;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 500;
+        }
+        .footer div ul li a{
+            font-weight: 700;
+        }
+        .small_title{
+            font-weight: 400;
+            margin-left: 30px;
+        }
+        </style>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+    <div class="container">
+        <div class="row sticky_to_work">
+            <div class="header d-flex">
+                <div class="header_left_box col-xl-6"><img class="trip_advisor_logo" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="logo"></div>
+                <div class="d-flex justify-content-end align-items-center header_right_box col-xl-6">
+                    <div class="posts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                          </svg>
+                        <a href="#">Posts</a>
+                    </div>
+                    <div class="alerts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                          </svg>
+                        <a href="#">Alerts</a>
+                    </div>
+                    <div class="trips">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                          </svg>
+                        <a href="#">Trips</a>
+                    </div>
+                    <div class="sign_in">
+                        <a style="color:white" href="#">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container2">
+                <ul class="menu">
+                    <li class="nav">
+                        <a href="#">Hotels</a>
+                        <ion-icon name="bed-outline"></ion-icon></li>
+                    <li class="nav">
+                        <a href="#">Vacation</a>
+                        <ion-icon name="home-outline"></ion-icon>
+                        <a href="#">Rentals</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#">Things to Do</a>
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </li>
+                    <li class="nav">
+                        <a href="#">Restraunts</a>
+                        <ion-icon name="restaurant-outline"></ion-icon></li>
+                    <li class="nav">
+                        <a href="#">Write a review</a>
+                        <ion-icon name="clipboard-outline"></ion-icon></li>
+                    <li class="nav">
+                        <a href="#">Travel Forums</a>
+                        <ion-icon name="document-text-outline"></ion-icon>
+                    </li>
+                    <li class="nav drop_menu">
+                        <a href="#">More</a>
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                            <div class="drop_down_menu">
+                                <ul>
+                                    <li><a href="#">Add a Place</a></li>
+                                    <li><a href="#">Airlines</a></li>
+                                    <li><a href="#">Cruises</a></li>
+                                    <li><a href="#">Flights</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Hire a Trip Designer</a></li>
+                                    <li><a href="#">Insurance</a></li>
+                                    <li><a href="#">Rental Cars</a></li>
+                                    <li><a href="#">Road Trips</a></li>
+                                    <li><a href="#">Travelers' Choice</a></li>
+                                    <li><a href="#">Vacation Packages</a></li>
+                                </ul>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="search d-flex justify-content-center align-items-center col-xl-12">
+                <img class="search_image" src="https://blog.allinclusiveoutlet.com/wp-content/uploads/Traveling-friends.jpg" alt="">
+                <div class="search_bar">
+                    <h1 class="text">Find The Good Out There.</h1>
+                    <input class="bar" type="text" placeholder="     Where to?">
+                </div>
+                <div class="search_logo"><ion-icon name="search-outline"></ion-icon></div>
+            </div>
+        </div>
+        <div class="row d-flex flex-row">
+            <div class="content-1">
+                <div class="display_ads col-xl-6 d-flex justify-content-center align-items-center">
+                        <div class="learn_more">
+                            <h1>Don't do it alone.<br>Hire an expert to craft your trip.</h1>
+                            <a href="#">Learn more</a>
+                        </div>
+                </div>
+                <div class="display_ads col-xl-6">
+                    <img style="width: 600px;" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b5/57/75.jpg" alt="">
+                </div>
+            </div>
+            <div class="content-2">
+                <h1 class="moreTo">More to explore</h1>
+                <div class="adsversiment_container col-xl-12">
+                    <div class="ads col-xl-4">
+                        <img class="gallery" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/73/88/ba/a642fe40-9ec3-467a.jpg?w=400&h=300&s=1" alt="">
+                        <p class="FromTripAdvisor">From TripAdvisor</p>
+                        <a href="#">Skiing, Snowboarding and COVID: Everything You Need To Know</a>
+                    </div>
+                    <div class="ads col-xl-4">
+                        <img class="gallery" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/8f/6f/f1/98614386-b098-4d01.jpg?w=400&h=300&s=1" alt="">
+                        <p class="FromTripAdvisor">From TripAdvisor</p>
+                        <a href="#">A Family Guide To Surviving The Pandemic Winter</a>
+                    </div>
+                    <div class="ads col-xl-4">
+                        <img class="gallery" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/8f/70/a7/d96a5733-e32b-411f.jpg?w=500&h=300&s=1s " alt="">
+                        <p class="FromTripAdvisor">From TripAdvisor</p>
+                        <a href="#">Our Food Memories: The World's Best Places to Indulge</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-3">
+                <h1 class="plan_your_dream">Dream Your Next Trip</h1>
+                <h3>Destinations Travels Love</h3>
+                <div class="dream_container">
+                    <div class="dream">
+                        <img class="dream_place" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/36/36/c0/caption.jpg?w=400&h=300&s=1" alt="">
+                        <a href="#">Punta Cana, Dominican Republic</a>
+                    </div>
+                    <div class="dream">
+                        <img class="dream_place" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/74/78/7e/christmas-magic.jpg?w=300&h=300&s=1" alt="">
+                        <a href="#">Orlando, FL</a>
+                    </div>
+                    <div class="dream">
+                        <img class="dream_place" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fb/35/maui.jpg?w=400&h=300&s=1" alt="">
+                        <a href="#">Maui, HI</a>
+                    </div>
+                    <div class="dream">
+                        <img class="dream_place" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/ff/0f/vail.jpg?w=400&h=300&s=1" alt="">
+                        <a href="#">Vail, CO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-4">
+                <h1 class="abu_dhabi">Sponsored by Abu Dhabi</h1>
+                <div class="abu_dhabi_container">
+                    <img class="abu_dhabi_img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-c/2560x500/1c/62/f1/a0/caption.jpg?w=500&h=500&s=1" alt="">
+                    <div class="visit_abu_container">
+                        <p class="visit_abu_dhabi">By visit Abu Dhabi</p>
+                        <h4>Abu Dhabi. Waiting to Welcome You</h4>
+                        <p class="visit_abu_dhabi">it's time to start planning that next incredible trip! Whether it's an outdoor adventure with friends, a luxury retreat for two surrounded by nature, a fun-...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-5">
+                <img src="https://villagrouploreto.s3.amazonaws.com/uploads/article/cover_en/247/villa-del-palmar-loreto-wins-2020-tripadvisor-travelers-choice-award.jpg" alt="">
+                <a class="see_winner" href="#">See the winners</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer">
+                <div>
+                <h5 class="small_title">About TripAdvisor</h5>
+                <ul class="about list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Resources and Policies</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investor and Relations</a></li>
+                    <li><a href="#">Content Integrity</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="small_title">Explore</h5>
+                <ul class="explore list">
+                    <li><a href="#">Write a Review</a></li>
+                    <li><a href="#">Add a Place</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Travel's Choice</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">GreenLeaders</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="small_title">Do Business With Us</h5>
+                <ul class="do_business list">
+                    <li><a href="#">Owners</a></li>
+                    <li><a href="#">Business Advantage</a></li>
+                    <li><a href="#">Sponsored Placements</a></li>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Become and Affiliate</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="small_title">Get The App</h5>
+                <ul class="get_app list">
+                    <li><a href="#">iPhone App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="small_title">Tripadvisor Sites</h5>
+                <ul class="sites list">
+                    <li>Discover your dream destination with <a href="#">Jetsetter</a></li>
+                    <li>Book the best restaurants with <a href="#">TheFork</a></li>
+                    <li>Book tours and attraction tickets on <a href="#">Viator</a></li>
+                    <li>Read cruise reviews on <a href="#">Cruise Critic</a></li>
+                    <li>Get airline seating charts on <a href="#">Seat Guru</a></li>
+                    <li>Find vacation rentals on <a href="#">FlipKey</a></li>
+                    <li>Search for holiday rentals on <a href="#">Holiday Lettings</a></li>
+                    <li>Find a vacation home on <a href="#">Vacation Home Rentals</a></li>
+                    <li>Plan and book your next trip with <a href="#">Reco Trip Designers</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="site_legislation container">
+        <img class="TripAdvisorLogo" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="">
+    </div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
+</html>
