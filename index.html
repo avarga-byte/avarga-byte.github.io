@@ -130,6 +130,75 @@
 
     // Add smooth momentum scrolling for iOS
     document.body.style.webkitOverflowScrolling = 'touch';
+
+    // Reposition 3D viewer instructions
+    function reposition3DInstructions() {
+      // Find all potential instruction elements
+      const selectors = [
+        'canvas + div',
+        'canvas ~ div',
+        '[class*="instruction"]',
+        '[class*="control"]',
+        '[class*="hint"]',
+        'div[style*="position: absolute"]'
+      ];
+
+      selectors.forEach(selector => {
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            const text = el.textContent.toLowerCase();
+            // Check if it contains control instructions
+            if (text.includes('move') || text.includes('pinch') || 
+                text.includes('orbit') || text.includes('rotate') ||
+                text.includes('drag') || text.includes('scroll') ||
+                text.includes('zoom') || text.includes('pan')) {
+              
+              // Apply nice positioning
+              el.style.cssText = `
+                position: fixed !important;
+                bottom: 20px !important;
+                right: 20px !important;
+                top: auto !important;
+                left: auto !important;
+                background: rgba(0, 0, 0, 0.75) !important;
+                color: white !important;
+                padding: 12px 20px !important;
+                border-radius: 8px !important;
+                font-size: 13px !important;
+                backdrop-filter: blur(10px) !important;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+                z-index: 100 !important;
+                max-width: 250px !important;
+                line-height: 1.6 !important;
+                transition: all 0.3s ease !important;
+                pointer-events: auto !important;
+              `;
+            }
+          });
+        } catch (e) {
+          console.log('Selector not found:', selector);
+        }
+      });
+    }
+
+    // Run immediately and on mutations
+    reposition3DInstructions();
+    
+    // Watch for dynamically added elements
+    const observer = new MutationObserver(reposition3DInstructions);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    // Run periodically for the first few seconds (for dynamically loaded 3D viewers)
+    let runCount = 0;
+    const repositionInterval = setInterval(() => {
+      reposition3DInstructions();
+      runCount++;
+      if (runCount > 10) clearInterval(repositionInterval);
+    }, 500);
   });
 })();
 </script></body></html>
