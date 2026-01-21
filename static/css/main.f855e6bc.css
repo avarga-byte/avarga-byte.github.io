@@ -216,7 +216,7 @@ canvas ~ div:last-of-type,
 [class*="hint"],
 div[style*="position: absolute"][style*="pointer-events"] {
   position: fixed !important;
-  bottom: 20px !important;
+  bottom: 100px !important;
   right: 20px !important;
   top: auto !important;
   left: auto !important;
@@ -259,7 +259,7 @@ canvas {
 /* If the instruction div is a direct sibling of canvas */
 canvas + div[style*="absolute"] {
   position: fixed !important;
-  bottom: 20px !important;
+  bottom: 100px !important;
   right: 20px !important;
   left: auto !important;
   top: auto !important;
