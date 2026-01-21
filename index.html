@@ -186,8 +186,8 @@
     reposition3DInstructions();
     
     // Watch for dynamically added elements
-    const observer = new MutationObserver(reposition3DInstructions);
-    observer.observe(document.body, {
+    const mutationObserver = new MutationObserver(reposition3DInstructions);
+    mutationObserver.observe(document.body, {
       childList: true,
       subtree: true
     });
