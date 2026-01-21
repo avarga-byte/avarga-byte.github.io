@@ -1,2 +1,226 @@
-body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}.App{text-align:center}.App-logo{height:40vmin;pointer-events:none}@media (prefers-reduced-motion:no-preference){.App-logo{animation:App-logo-spin 20s linear infinite}}.App-header{align-items:center;background-color:#282c34;color:#fff;display:flex;flex-direction:column;font-size:calc(10px + 2vmin);justify-content:center;min-height:100vh}.App-link{color:#61dafb}@keyframes App-logo-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+/* Enhanced Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #764ba2 0%, #667eea 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 20px rgba(97, 218, 251, 0.5));
+  transition: all 0.3s ease;
+}
+
+.App-logo:hover {
+  filter: drop-shadow(0 0 30px rgba(97, 218, 251, 0.8));
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin 20s linear infinite;
+  }
+}
+
+.App-header {
+  align-items: center;
+  background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #1e293b 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 40px 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Animated background effect */
+.App-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(97, 218, 251, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(167, 139, 250, 0.1) 0%, transparent 50%);
+  animation: backgroundPulse 10s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes backgroundPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.App-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background: rgba(97, 218, 251, 0.1);
+  border: 2px solid #61dafb;
+  margin: 10px;
+}
+
+.App-link:hover {
+  background: rgba(97, 218, 251, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(97, 218, 251, 0.4);
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Content sections with smooth scroll */
+section {
+  scroll-margin-top: 20px;
+  padding: 60px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Fade in on scroll animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card styles for better visual hierarchy */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Video styles */
+video {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 20px 15px;
+    font-size: calc(8px + 2vmin);
+  }
+  
+  .card {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  section {
+    padding: 40px 15px;
+  }
+}
 /*# sourceMappingURL=main.f855e6bc.css.map*/

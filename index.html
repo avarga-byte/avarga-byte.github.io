@@ -1,1 +1,135 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.b3a24dc9.js"></script><link href="/static/css/main.f855e6bc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.b3a24dc9.js"></script><link href="/static/css/main.f855e6bc.css" rel="stylesheet"><style>
+/* Additional smooth scrolling enhancements */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.loading {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(to right, #f0f0f0 4%, #e8e8e8 25%, #f0f0f0 36%);
+  background-size: 1000px 100%;
+}
+</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>
+// Enhanced smooth scrolling and animations
+(function() {
+  // Smooth scroll for all internal links
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add intersection observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections and cards
+    setTimeout(() => {
+      const elements = document.querySelectorAll('section, .card, img, video');
+      elements.forEach(el => {
+        if (!el.classList.contains('no-fade')) {
+          el.classList.add('fade-in-section');
+          observer.observe(el);
+        }
+      });
+    }, 500);
+
+    // Smooth scroll to top button
+    const scrollToTopBtn = document.createElement('button');
+    scrollToTopBtn.innerHTML = '↑';
+    scrollToTopBtn.className = 'scroll-to-top';
+    scrollToTopBtn.style.cssText = `
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    `;
+    
+    document.body.appendChild(scrollToTopBtn);
+
+    // Show/hide scroll to top button
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+      clearTimeout(scrollTimeout);
+      
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.style.opacity = '1';
+        scrollToTopBtn.style.pointerEvents = 'auto';
+      } else {
+        scrollToTopBtn.style.opacity = '0';
+        scrollToTopBtn.style.pointerEvents = 'none';
+      }
+
+      scrollTimeout = setTimeout(() => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.style.opacity = '0.7';
+        }
+      }, 1000);
+    });
+
+    scrollToTopBtn.addEventListener('mouseenter', function() {
+      this.style.opacity = '1';
+      this.style.transform = 'scale(1.1) translateY(-3px)';
+      this.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.4)';
+    });
+
+    scrollToTopBtn.addEventListener('mouseleave', function() {
+      this.style.transform = 'scale(1) translateY(0)';
+      this.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.3)';
+    });
+
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Parallax effect for images
+    window.addEventListener('scroll', function() {
+      const scrolled = window.pageYOffset;
+      const parallaxElements = document.querySelectorAll('img, video');
+      
+      parallaxElements.forEach((el, index) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const speed = 0.5;
+          const yPos = -(scrolled * speed * 0.1);
+          if (!el.style.transform.includes('scale')) {
+            el.style.transform = `translateY(${yPos}px)`;
+          }
+        }
+      });
+    });
+
+    // Add smooth momentum scrolling for iOS
+    document.body.style.webkitOverflowScrolling = 'touch';
+  });
+})();
+</script></body></html>
