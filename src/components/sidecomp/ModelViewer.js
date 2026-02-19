@@ -37,7 +37,7 @@ function Controls() {
       enableZoom={true}
       enablePan={true}
       enableRotate={true}
-      minDistance={2}
+      minDistance={0.5}
       maxDistance={60}
       maxPolarAngle={Math.PI / 1.8}
       // Touch: one finger = rotate, two fingers = zoom+pan
