@@ -107,8 +107,9 @@ export default function ModelViewer() {
       {/* Instructions */}
       <div
         style={{
-          marginTop: 5,
-          position: "relative",
+          position: "absolute",
+          bottom: 10,
+          left: 10,
           padding: "10px 14px",
           background: "rgba(0,0,0,0.6)",
           color: "#fff",
@@ -116,6 +117,7 @@ export default function ModelViewer() {
           borderRadius: "8px",
           lineHeight: 1.5,
           pointerEvents: "none",
+          zIndex: 10,
         }}
       >
         ☝️ 1本指：回転 &nbsp;|&nbsp; ✌️ 2本指：移動 &nbsp;|&nbsp; 🤏 ピンチ：ズーム
