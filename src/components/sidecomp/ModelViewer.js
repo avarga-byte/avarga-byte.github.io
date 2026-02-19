@@ -83,7 +83,7 @@ export default function ModelViewer() {
     }`;
 
   return (
-    <div className="h-1/2 w-full relative">
+    <div className="h-1/2 md:h-2/3 lg:h-[75vh] w-full relative">
       <Canvas
         camera={{ fov: 50 }}
         className="rounded-xl"
