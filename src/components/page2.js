@@ -12,7 +12,7 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import rightSide from "../images/rightSide.jpg";
 import smallPass1 from "../images/Image15.png";
 
-function page2({ onButtonClick }) {
+function page2() {
   return (
     <>
       <div className="bg-white shadow-xl flex overflow-auto px-2 flex-col h-full w-full justify-start items-center">
@@ -81,20 +81,7 @@ function page2({ onButtonClick }) {
           src={smallPass1}
           alt={"smallPass"}
         />
-        <div className="w-full h-32 flex justify-between items-center">
-          <h1
-            onClick={() => onButtonClick("1")}
-            className="border bg-black text-white rounded-xl p-2 m-4 mb-12 cursor-pointer"
-          >
-            PAGE BEFORE
-          </h1>
-          <h1
-            onClick={() => onButtonClick("3")}
-            className="border bg-black text-white rounded-xl p-2 m-4 mb-12 cursor-pointer"
-          >
-            NEXT PAGE
-          </h1>
-        </div>
+
       </div>
     </>
   );

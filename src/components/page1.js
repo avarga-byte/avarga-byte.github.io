@@ -6,7 +6,7 @@ import smallPass4 from "../images/Image14.png";
 import video from "../Video/Image to Video.mp4";
 import ModelViewer from "./sidecomp/ModelViewer";
 
-function page1({ onButtonClick }) {
+function page1() {
   return (
     <div className="bg-white shadow-xl flex overflow-auto scroll-smooth flex-col h-full w-full justify-start items-center">
       <h1 className="text-[50px]">Hachioji Resthub</h1>
@@ -49,14 +49,7 @@ function page1({ onButtonClick }) {
           <img src={smallPass3} className="w-1/2  p-2 rounded-[20px]" />
           <img src={smallPass4} className="w-1/2 p-2 rounded-[20px]" />
         </div>
-        <div className="w-full h-32 flex justify-end items-center">
-          <h1
-            onClick={() => onButtonClick("2")}
-            className="border bg-black text-white rounded-xl p-2 m-4 mb-12 cursor-pointer"
-          >
-            NEXT PAGE
-          </h1>
-        </div>
+
       </div>
     </div>
   );

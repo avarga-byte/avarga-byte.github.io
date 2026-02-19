@@ -8,7 +8,7 @@ import Title from "./sidecomp/Title";
 
 const page5Images = [img1, img2, img3, img4, img5, img6];
 
-function Page5({ onButtonClick }) {
+function Page5() {
   return (
     <>
       <div className="bg-white shadow-xl flex overflow-auto flex-col h-full w-full justify-start items-center p-2">
@@ -21,14 +21,7 @@ function Page5({ onButtonClick }) {
             className="w-full rounded-xl border shadow-xl mt-4"
           />
         ))}
-        <div className="w-full h-32 flex justify-between items-center">
-          <h1
-            onClick={() => onButtonClick("4")}
-            className="border bg-black text-white rounded-xl p-2 m-4 mb-12 cursor-pointer"
-          >
-            PAGE BEFORE
-          </h1>
-        </div>
+
       </div>
     </>
   );
