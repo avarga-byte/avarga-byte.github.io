@@ -108,12 +108,18 @@ function Page4({ onButtonClick }) {
             alt={user.alt}
           />
         ))}
-        <div className="w-full h-32 flex justify-end items-center">
+        <div className="w-full h-32 flex justify-between items-center">
           <h1
             onClick={() => onButtonClick("3")}
             className="border bg-black text-white rounded-xl p-2 m-4 mb-12 cursor-pointer"
           >
-            Go Back
+            PAGE BEFORE
+          </h1>
+          <h1
+            onClick={() => onButtonClick("5")}
+            className="border bg-black text-white rounded-xl p-2 m-4 mb-12 cursor-pointer"
+          >
+            NEXT PAGE
           </h1>
         </div>
       </div>

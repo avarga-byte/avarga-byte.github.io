@@ -6,6 +6,7 @@ import Page1 from "./components/page1";
 import Page2 from "./components/page2";
 import Page3 from "./components/page3";
 import Page4 from "./components/page4";
+import Page5 from "./components/page5";
 
 function App() {
   const [page, setPage] = useState("1");
@@ -22,6 +23,8 @@ function App() {
         return <Page3 onButtonClick={handleChildClick} />;
       case "4":
         return <Page4 onButtonClick={handleChildClick} />;
+      case "5":
+        return <Page5 onButtonClick={handleChildClick} />;
       default:
         return <Page1 onButtonClick={handleChildClick} />;
     }
