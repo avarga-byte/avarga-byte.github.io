@@ -1,0 +1,44 @@
+# Инженер Геодези ХХК (Engineering Geodesy LLC)
+
+> Mongolian geodesy, geology, urban planning, land-management and accredited laboratory services company, founded in 1993. Headquartered in Ulaanbaatar, serving public-sector and private-sector clients across Mongolia.
+
+## About
+
+- **Founded:** 1993
+- **Headquarters:** Khan-Uul District, Ulaanbaatar, Mongolia
+- **Phone:** +976 7727-8899
+- **Email:** post@geo-mongol.com
+- **Website:** https://geo-mongol.mn
+
+## Services
+
+- [Геодези геоматикийн групп / Geodesy & Geomatics Group](https://geo-mongol.mn/geodesyGroup): Building geodetic networks, performing all topographic and aerial / ground-based mapping work for domestic and international clients.
+- [Хот төлөвлөлт, архитектурын групп / Urban Planning & Architecture Group](https://geo-mongol.mn/architecture): Construction, architecture and urban planning services. 10+ years of operations.
+- [Газрын харилцаа, газрын үнэлгээний групп / Land Management & Valuation Group](https://geo-mongol.mn/landRating): Land use planning and land valuation for Mongolia's national zoning plan, including industrial-zone land planning.
+- [Геотехник, гидрогеологи, геофизикийн групп / Geotechnics, Hydrogeology & Geophysics Group](https://geo-mongol.mn/geologyGroup): Engineering geology surveys and ground testing for construction sites.
+- [Итгэмжлэгдсэн хөрс судлалын лаборатори TL-78 / Accredited Soil-Testing Laboratory TL-78](https://geo-mongol.mn/lab-tl-78): MNS ISO/IEC 17025:2018 accredited soil and water testing — physical/mechanical soil analysis, density quality control, soil chemistry, environmental assessment, agricultural fertility, heavy-metal soil contamination, rock testing, field tests.
+- [Итгэмжлэгдсэн геодезийн хэмжилзүйн лаборатори CL-07 / Accredited Geodetic Metrology Laboratory CL-07](https://geo-mongol.mn/lab-cl-07): MNS ISO/IEC 17025:2018 accredited metrology lab. Calibration and verification of geodetic instruments (total stations, theodolites, levels, GNSS receivers, laser scanners, UAV cameras). Partners with Topcon (USA), Kolida & Hi-Target (China), Pentax & Sokkia (Japan).
+
+## Company information
+
+- [Бидний тухай / About Us — Introduction](https://geo-mongol.mn/introduction): Company history, mission, and major projects since 1993.
+- [Greeting from the Founder](https://geo-mongol.mn/greeting): Message from the founder, Ch. Burmaa.
+- [Ажилтнууд / Employees](https://geo-mongol.mn/employees): Key staff and group leads.
+- [Холбоо барих / Contact](https://geo-mongol.mn/contact): Office and lab addresses, phone, email, social links.
+
+## News & updates
+
+- [Мэдээлэл / News](https://geo-mongol.mn/newsHome): Latest company news, project updates, industry information. Filterable by category (geodesy, architecture, geology, lab, partners DJI/Garmin, etc.).
+
+## Workforce
+
+- [Хүсэлт илгээх / Request Form](https://geo-mongol.mn/request): Submit a service inquiry or quote request.
+- [Ажлын байр / Careers](https://geo-mongol.mn/resume): Career opportunities and résumé submission.
+
+## Partner brands
+
+Authorized distributor / partner of: DJI (drones), Autel Robotics, Kolida, Garmin, Hi-Target, Pix4D, Agisoft, Topcon, Sokkia, Pentax.
+
+## Languages
+
+The website is available in Mongolian (default), English, Chinese, and Japanese.

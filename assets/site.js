@@ -12,4 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  document.querySelectorAll(".mobile-demo").forEach((demo) => {
+    const tabs = demo.querySelectorAll(".phone-tabs button");
+    const panes = demo.querySelectorAll(".screen-pane");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        panes.forEach((p) => p.classList.toggle("active", p.dataset.screen === tab.dataset.target));
+      });
+    });
+  });
 });

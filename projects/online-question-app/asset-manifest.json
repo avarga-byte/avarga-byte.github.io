@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/projects/online-question-app/static/css/main.27908cfa.css",
+    "main.js": "/projects/online-question-app/static/js/main.b648bf0e.js",
+    "static/media/PunchCard.png": "/projects/online-question-app/static/media/PunchCard.1294ab304f3b6e39cbf3.png",
+    "static/media/matrix code nfi.ttf": "/projects/online-question-app/static/media/matrix code nfi.77b36b5eb15b0d99bd9a.ttf",
+    "index.html": "/projects/online-question-app/index.html",
+    "main.27908cfa.css.map": "/projects/online-question-app/static/css/main.27908cfa.css.map",
+    "main.b648bf0e.js.map": "/projects/online-question-app/static/js/main.b648bf0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27908cfa.css",
+    "static/js/main.b648bf0e.js"
+  ]
+}

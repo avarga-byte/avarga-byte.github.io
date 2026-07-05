@@ -91,6 +91,10 @@ a { color: inherit; }
   font-size: 0.7rem; font-weight: 700; color: #14120a; background: var(--accent);
   padding: 2px 8px; border-radius: 6px; letter-spacing: 0.03em;
 }
+.badge-preview {
+  font-size: 0.7rem; font-weight: 700; color: var(--text-dim); background: var(--surface-2);
+  border: 1px solid var(--border); padding: 2px 8px; border-radius: 6px; letter-spacing: 0.03em;
+}
 
 /* ---- Early work ---- */
 .early-work { padding: 8px 24px 80px; }
@@ -128,3 +132,31 @@ a { color: inherit; }
 @media (max-width: 800px) {
   .case-body { grid-template-columns: 1fr; }
 }
+
+/* ---- Mobile app demo (phone frame) ---- */
+.mobile-demo { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; margin: 20px 0 32px; }
+.phone-frame {
+  width: 260px; flex-shrink: 0; padding: 10px; border-radius: 40px;
+  background: #14161c; border: 1px solid #2a2e3a;
+  box-shadow: 0 24px 60px rgba(0,0,0,.45);
+}
+.phone-frame .notch {
+  width: 90px; height: 18px; background: #14161c; border-radius: 0 0 12px 12px;
+  margin: 0 auto; position: relative; z-index: 2;
+}
+.phone-screen {
+  background: #fff; color: #1a1a1a; border-radius: 28px; overflow: hidden;
+  aspect-ratio: 9 / 19.5; margin-top: -18px; position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex; flex-direction: column;
+}
+.phone-screen .screen-pane { display: none; flex: 1; flex-direction: column; overflow: hidden; }
+.phone-screen .screen-pane.active { display: flex; }
+.phone-tabs { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.phone-tabs button {
+  border: 1px solid var(--border); background: var(--surface); color: var(--text-dim);
+  border-radius: 999px; padding: 6px 14px; font-size: 0.78rem; cursor: pointer;
+}
+.phone-tabs button.active { background: var(--accent); border-color: var(--accent); color: #14120a; font-weight: 600; }
+.mobile-demo .caption { flex: 1; min-width: 240px; }
+.mobile-demo .caption p { color: var(--text-dim); line-height: 1.7; }

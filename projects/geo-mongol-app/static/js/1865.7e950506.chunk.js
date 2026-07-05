@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfront=self.webpackChunkfront||[]).push([[1865],{1865(e,s,t){t.r(s);t(5043);var n=t(579);const r=()=>(0,n.jsx)("div",{className:"text-[40px]",children:"We are working on it"});t.d(s,["default",0,r])}}]);
+//# sourceMappingURL=1865.7e950506.chunk.js.map
