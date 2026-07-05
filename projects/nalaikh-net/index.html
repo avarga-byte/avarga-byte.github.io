@@ -23,78 +23,34 @@
   <div class="container">
     <a class="back" href="/#work">← All projects</a>
     <div class="tags" style="margin-top:16px;">
-      <span class="tag web">Web App</span><span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span>
+      <span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span>
     </div>
-    <h1>NalaikhNet Civic Platform</h1>
+    <h1>NalaikhNet</h1>
     <p class="tagline">
-      A district e-government platform: a public news &amp; services portal, a mobile app,
-      a citizen registration module, and the admin panel that ties it together.
+      A local news &amp; community app for Nalaikh district — a resident mobile app plus the
+      staff admin panel that publishes and manages it.
     </p>
   </div>
 </section>
 
 <div class="container">
+  <h2 style="font-size:1rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-dim);margin:8px 0 12px;">Mobile news app — interactive</h2>
   <div class="iframe-wrap">
-    <iframe src="/projects/nalaikh-net-app/" loading="lazy" title="NalaikhNet public portal live demo"></iframe>
+    <iframe src="/projects/demos/#/nalaikh" loading="lazy" title="NalaikhNet news app replica"></iframe>
   </div>
   <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
-    ↑ A rebuilt copy of the public portal frontend running live above (news/tenders/complaints
-    lists are empty since the private production API isn't reachable here).
+    ↑ A working React + Tailwind replica of the resident news app — tap the bottom tabs to move
+    between the news feed, classifieds, library, and profile.
   </p>
-</div>
 
-<div class="container">
-  <div class="mobile-demo">
-    <div class="phone-frame">
-      <div class="notch"></div>
-      <div class="phone-screen">
-        <div class="screen-pane active" data-screen="feed" style="background:#f5f6f8;">
-          <div style="background:#0088b4;color:#fff;padding:14px 16px;font-weight:700;">NalaikhNet</div>
-          <div style="padding:12px;display:flex;flex-direction:column;gap:10px;overflow:auto;">
-            <div style="background:#fff;border-radius:12px;padding:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
-              <div style="font-weight:700;font-size:0.82rem;">Толгойн бүрдэл засвар эхэллээ</div>
-              <div style="color:#8b93a7;font-size:0.7rem;margin-top:4px;">Мэдээ · 2 цагийн өмнө</div>
-            </div>
-            <div style="background:#fff;border-radius:12px;padding:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
-              <div style="font-weight:700;font-size:0.82rem;">Орон сууц зарна — 2 өрөө</div>
-              <div style="color:#8b93a7;font-size:0.7rem;margin-top:4px;">Зар · Ads</div>
-            </div>
-          </div>
-          <div style="margin-top:auto;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #e3e5ea;background:#fff;font-size:0.65rem;color:#8b93a7;">
-            <div style="color:#0088b4;font-weight:700;">Feed</div><div>Ads</div><div>Freetime</div><div>Profile</div>
-          </div>
-        </div>
-        <div class="screen-pane" data-screen="ads" style="background:#f5f6f8;">
-          <div style="background:#0088b4;color:#fff;padding:14px 16px;font-weight:700;">Зар · Ads</div>
-          <div style="padding:12px;display:flex;flex-direction:column;gap:10px;overflow:auto;">
-            <div style="background:#fff;border-radius:12px;padding:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);display:flex;gap:8px;">
-              <div style="width:44px;height:44px;background:#e3e5ea;border-radius:8px;flex-shrink:0;"></div>
-              <div><div style="font-weight:700;font-size:0.78rem;">iPhone зарна</div><div style="color:#8b93a7;font-size:0.68rem;">850,000₮</div></div>
-            </div>
-            <div style="background:#fff;border-radius:12px;padding:10px;box-shadow:0 1px 3px rgba(0,0,0,.08);display:flex;gap:8px;">
-              <div style="width:44px;height:44px;background:#e3e5ea;border-radius:8px;flex-shrink:0;"></div>
-              <div><div style="font-weight:700;font-size:0.78rem;">Дугуй зарна</div><div style="color:#8b93a7;font-size:0.68rem;">120,000₮</div></div>
-            </div>
-          </div>
-          <div style="margin-top:auto;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #e3e5ea;background:#fff;font-size:0.65rem;color:#8b93a7;">
-            <div>Feed</div><div style="color:#0088b4;font-weight:700;">Ads</div><div>Freetime</div><div>Profile</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="caption">
-      <div class="phone-tabs">
-        <button class="active" data-target="feed">News Feed</button>
-        <button data-target="ads">Classifieds</button>
-      </div>
-      <p>
-        Recreated from the real component tree (<code>Component/MainApp.js</code>,
-        <code>Component/Ads.js</code>, <code>ExtraComponents/Freetime/</code>) — the production
-        app talks to a private API, so this static walkthrough stands in for a live install.
-        Tap the buttons above to switch screens.
-      </p>
-    </div>
+  <h2 style="font-size:1rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-dim);margin:8px 0 12px;">Admin panel — interactive</h2>
+  <div class="iframe-wrap">
+    <iframe src="/projects/demos/#/nalaikh-admin" loading="lazy" title="NalaikhNet admin replica"></iframe>
   </div>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
+    ↑ A working replica of the staff admin panel — switch between overview, posts, users,
+    companies, and banners in the sidebar.
+  </p>
 </div>
 
 <div class="case-body container">
@@ -102,35 +58,33 @@
     <section>
       <h2>Overview</h2>
       <p>
-        This is the largest project family in the portfolio — several separate repositories
-        that together form one civic platform for a district, covering the public-facing site,
-        a mobile companion app, and the internal tools staff use to run it.
+        NalaikhNet is a local news and community app for Nalaikh, a district of Ulaanbaatar —
+        a mobile app for residents plus an admin panel for staff, sharing one Node/Express +
+        MongoDB backend. Residents read district news and browse classifieds; staff publish
+        posts and manage the platform from the dashboard.
       </p>
     </section>
 
     <section>
       <h2>What it does</h2>
       <ul class="features">
-        <li><strong>Public portal</strong> — news and announcements, banners, a company/business
-          directory, and a citizen complaint submission form, with COVID-era information pages
-          from when it was first built.</li>
-        <li><strong>Mobile app</strong> — an Expo/React Native app with a news feed, a classifieds/ads
-          section (post and browse listings), a "free time" library of reading recommendations,
-          and a resident profile, all behind a bottom tab bar.</li>
-        <li><strong>Registration module</strong> — a dedicated citizen registration web flow for
-          onboarding residents into the platform.</li>
-        <li><strong>Admin dashboard</strong> — staff sign in to manage users, posts, banners,
-          and submitted complaints/questions, with its own authentication separate from
-          citizen accounts.</li>
+        <li><strong>Resident mobile app</strong> — an Expo/React Native app with a district news
+          feed, a classifieds/ads section (post and browse listings), a "free time" library of
+          reading recommendations, and a resident profile, all behind a bottom tab bar.</li>
+        <li><strong>Admin panel</strong> — staff sign in to publish and manage news posts,
+          moderate users, maintain a company/organization directory, run promotional banners,
+          and watch engagement statistics.</li>
+        <li><strong>Shared backend</strong> — one API and data model behind both surfaces, with
+          JWT auth and image uploads via Cloudinary.</li>
       </ul>
     </section>
 
     <section>
       <h2>Why it's interesting</h2>
       <p>
-        It's a full multi-surface product — web, mobile, and admin — sharing one backend and
-        one underlying data model, built to match how a district office actually operates
-        rather than as a single monolithic app.
+        It's a two-surface product — a resident-facing mobile app and a staff admin panel —
+        built around a single backend, matching how a district information office actually
+        publishes and moderates local news.
       </p>
     </section>
   </main>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bureghangai Soum Portal — Case Study</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/">Bileg Avarga</a>
+    <nav>
+      <a href="/#work">Work</a>
+      <a href="https://github.com/avarga-byte" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="container">
+    <a class="back" href="/#work">← All projects</a>
+    <div class="tags" style="margin-top:16px;"><span class="tag web">Web App</span><span class="tag admin">Admin Panel</span></div>
+    <h1>Bureghangai Soum Portal</h1>
+    <p class="tagline">
+      A local e-government portal for Bureghangai soum, Bulgan Province — public news,
+      official resolutions and tenders, citizen complaints, and a staff dashboard behind it.
+    </p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="iframe-wrap">
+    <iframe src="/projects/bureghangai-app/" loading="lazy" title="Bureghangai soum portal live demo"></iframe>
+  </div>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
+    ↑ The rebuilt frontend running live above (news/tender/complaint lists come from the private
+    production API, so they read empty here — the full page layout, sections, and navigation work).
+  </p>
+</div>
+
+<div class="case-body container">
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Bureghangai is a soum (district) of Bulgan Province in Mongolia. This portal is its
+        local-government website: a public site where residents read news and official documents,
+        submit complaints, and access services, plus an admin dashboard the soum office uses to
+        publish and manage all of it. Internally the project is named "hutag".
+      </p>
+    </section>
+
+    <section>
+      <h2>What it does</h2>
+      <ul class="features">
+        <li>Public news and announcements feed for the soum, with banners and a business
+          directory.</li>
+        <li>An official-documents section: ИТХ resolutions (Хурлын тогтоол), Governor's decrees
+          (Засаг даргын захирамж), and tender invitations (Тендерийн урилга).</li>
+        <li>Citizen complaint / petition submission (Өргөдөл гомдол) with a responses view.</li>
+        <li>COVID-era information and travel-request pages from when it was first built.</li>
+        <li>An admin dashboard for staff to publish news, manage documents, and handle
+          submissions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why it's interesting</h2>
+      <p>
+        It's a real local-government product for a rural soum — the kind of civic infrastructure
+        that's common for cities but rarely built for smaller administrative units. It shares a
+        lot of DNA with the Nalaikh news project but is a separate site for a separate place.
+      </p>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+    <div class="box">
+      <h3>Tech Stack</h3>
+      <div class="stack">
+        <span class="chip">React</span>
+        <span class="chip">Ant Design</span>
+        <span class="chip">CKEditor</span>
+        <span class="chip">Tailwind CSS</span>
+        <span class="chip">Node/Express</span>
+        <span class="chip">MongoDB</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="bar container">
+    <span>© <span id="year"></span> Bileg Avarga</span>
+    <span><a href="https://github.com/avarga-byte" target="_blank" rel="noopener">github.com/avarga-byte</a></span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
