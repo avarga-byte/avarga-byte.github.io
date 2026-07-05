@@ -23,7 +23,7 @@
   <div class="container">
     <a class="back" href="/#work">← All projects</a>
     <div class="tags" style="margin-top:16px;">
-      <span class="tag web">Web App</span><span class="tag admin">Admin Panel</span>
+      <span class="tag web">Web App</span><span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span>
     </div>
     <h1>Geo Mongol</h1>
     <p class="tagline">
@@ -32,6 +32,43 @@
     </p>
   </div>
 </section>
+
+<div class="container">
+  <div class="iframe-wrap">
+    <iframe src="/projects/geo-mongol-app/" loading="lazy" title="Geo Mongol live demo"></iframe>
+  </div>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
+    ↑ A rebuilt copy of the frontend running live above (note: some data comes from the
+    production API and won't load here — the public marketing pages work fully).
+  </p>
+  <div class="mobile-demo">
+    <div class="phone-frame">
+      <div class="notch"></div>
+      <div class="phone-screen">
+        <div class="screen-pane active" data-screen="signup" style="background:#fff;align-items:center;padding:22px 20px;gap:8px;overflow:auto;">
+          <img src="https://www.geo-mongol.mn/user/assets/images/logo.png" style="height:40px;margin-bottom:10px;" onerror="this.style.display='none'" />
+          <div style="width:100%;background:#f4f4f4;border-radius:8px;padding:10px 12px;font-size:0.78rem;color:#333;text-align:left;">Хэрэглэгчийн нэр</div>
+          <div style="width:100%;background:#f4f4f4;border-radius:8px;padding:10px 12px;font-size:0.78rem;color:#333;text-align:left;">Утасны дугаар</div>
+          <div style="width:100%;background:#f4f4f4;border-radius:8px;padding:10px 12px;font-size:0.78rem;color:#333;text-align:left;">Нууц үг</div>
+          <div style="width:100%;background:#f4f4f4;border-radius:8px;padding:10px 12px;font-size:0.78rem;color:#333;text-align:left;">Нууц үг баталгаажуулах</div>
+          <div style="width:100%;background:#e3b341;color:#14120a;border-radius:8px;padding:10px;font-weight:700;font-size:0.85rem;margin-top:8px;text-align:center;">Бүртгүүлэх</div>
+          <div style="font-size:0.72rem;color:#8b93a7;margin-top:4px;">Бүртгэлтэй хэрэглэгч үү?</div>
+        </div>
+      </div>
+    </div>
+    <div class="caption">
+      <div class="phone-tabs">
+        <button class="active" data-target="signup">Sign Up</button>
+      </div>
+      <p>
+        Recreated from the app's real form (<code>components/SignUp.js</code>) — field labels
+        and the logo are pulled directly from the source, which fetches the same logo asset as
+        the production geo-mongol.mn site. The live app posts to a private API, so this static
+        walkthrough stands in for a live install.
+      </p>
+    </div>
+  </div>
+</div>
 
 <div class="case-body container">
   <main>
@@ -60,6 +97,8 @@
           delivering technical reports to clients.</li>
         <li>Rich content editing for staff via TinyMCE, with image compression and HEIC
           conversion handled automatically on upload.</li>
+        <li>A companion Expo/React Native app for client sign-up, pulling the same branding
+          straight from the production site.</li>
       </ul>
     </section>
 
@@ -104,5 +143,6 @@
   </div>
 </footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="/assets/site.js"></script>
 </body>
 </html>

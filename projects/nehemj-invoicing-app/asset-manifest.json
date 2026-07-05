@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/projects/nehemj-invoicing-app/static/css/main.d53fc7b6.css",
+    "main.js": "/projects/nehemj-invoicing-app/static/js/main.6a2113e6.js",
+    "static/js/236.1ef299c5.chunk.js": "/projects/nehemj-invoicing-app/static/js/236.1ef299c5.chunk.js",
+    "static/js/703.5fdcbe3f.chunk.js": "/projects/nehemj-invoicing-app/static/js/703.5fdcbe3f.chunk.js",
+    "static/js/760.76c08ea4.chunk.js": "/projects/nehemj-invoicing-app/static/js/760.76c08ea4.chunk.js",
+    "static/js/787.753b66d1.chunk.js": "/projects/nehemj-invoicing-app/static/js/787.753b66d1.chunk.js",
+    "static/media/amjilt.png": "/projects/nehemj-invoicing-app/static/media/amjilt.641fee38dc8518fae134.png",
+    "static/media/logo.jpeg": "/projects/nehemj-invoicing-app/static/media/logo.bfb3fad712b58725c059.jpeg",
+    "static/media/эйтай (1).png": "/projects/nehemj-invoicing-app/static/media/эйтай (1).77889bcb07ee9e50ef50.png",
+    "index.html": "/projects/nehemj-invoicing-app/index.html",
+    "main.d53fc7b6.css.map": "/projects/nehemj-invoicing-app/static/css/main.d53fc7b6.css.map",
+    "main.6a2113e6.js.map": "/projects/nehemj-invoicing-app/static/js/main.6a2113e6.js.map",
+    "236.1ef299c5.chunk.js.map": "/projects/nehemj-invoicing-app/static/js/236.1ef299c5.chunk.js.map",
+    "703.5fdcbe3f.chunk.js.map": "/projects/nehemj-invoicing-app/static/js/703.5fdcbe3f.chunk.js.map",
+    "760.76c08ea4.chunk.js.map": "/projects/nehemj-invoicing-app/static/js/760.76c08ea4.chunk.js.map",
+    "787.753b66d1.chunk.js.map": "/projects/nehemj-invoicing-app/static/js/787.753b66d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d53fc7b6.css",
+    "static/js/main.6a2113e6.js"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/projects/exchange-office-app/static/css/main.1114d98e.css",
+    "main.js": "/projects/exchange-office-app/static/js/main.f4ef1b53.js",
+    "static/js/787.71df535f.chunk.js": "/projects/exchange-office-app/static/js/787.71df535f.chunk.js",
+    "static/media/logo.png": "/projects/exchange-office-app/static/media/logo.b345c665fa84cb6d1d82.png",
+    "static/media/name.png": "/projects/exchange-office-app/static/media/name.b2abf2da1b293848aa18.png",
+    "static/media/404 Error-rafiki.svg": "/projects/exchange-office-app/static/media/404 Error-rafiki.46dd7015e5fcde8c0fa606cda2270456.svg",
+    "index.html": "/projects/exchange-office-app/index.html",
+    "main.1114d98e.css.map": "/projects/exchange-office-app/static/css/main.1114d98e.css.map",
+    "main.f4ef1b53.js.map": "/projects/exchange-office-app/static/js/main.f4ef1b53.js.map",
+    "787.71df535f.chunk.js.map": "/projects/exchange-office-app/static/js/787.71df535f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1114d98e.css",
+    "static/js/main.f4ef1b53.js"
+  ]
+}

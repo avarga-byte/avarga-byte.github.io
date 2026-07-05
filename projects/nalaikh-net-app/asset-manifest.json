@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/projects/nalaikh-net-app/static/css/main.5d5b0a1f.css",
+    "main.js": "/projects/nalaikh-net-app/static/js/main.4c14b663.js",
+    "static/media/file-1629799877492.jpeg": "/projects/nalaikh-net-app/static/media/file-1629799877492.ab957cd275f592c5b13c.jpeg",
+    "static/media/map.svg": "/projects/nalaikh-net-app/static/media/map.9f00d5355b82687af1b88051e1ee544e.svg",
+    "static/media/hutaglogo.png": "/projects/nalaikh-net-app/static/media/hutaglogo.b4e9a627b8c8459ec1d3.png",
+    "static/media/bulgan.webp": "/projects/nalaikh-net-app/static/media/bulgan.1d6ad0f5f76856eeefab.webp",
+    "static/media/image2.webp": "/projects/nalaikh-net-app/static/media/image2.834f95e73ae720a71105.webp",
+    "static/media/emongolia.webp": "/projects/nalaikh-net-app/static/media/emongolia.b07a7654ce657bc9b54c.webp",
+    "static/media/image.webp": "/projects/nalaikh-net-app/static/media/image.dcbca62b57d7164a998c.webp",
+    "index.html": "/projects/nalaikh-net-app/index.html",
+    "main.5d5b0a1f.css.map": "/projects/nalaikh-net-app/static/css/main.5d5b0a1f.css.map",
+    "main.4c14b663.js.map": "/projects/nalaikh-net-app/static/js/main.4c14b663.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d5b0a1f.css",
+    "static/js/main.4c14b663.js"
+  ]
+}

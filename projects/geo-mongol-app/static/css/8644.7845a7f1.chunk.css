@@ -1,0 +1,2 @@
+@keyframes orbit{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.orbit{height:0;width:0}.orbit-spin{animation:orbit 12s linear infinite}
+/*# sourceMappingURL=8644.7845a7f1.chunk.css.map*/
