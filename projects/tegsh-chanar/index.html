@@ -32,47 +32,13 @@
 </section>
 
 <div class="container">
-  <div class="mobile-demo">
-    <div class="phone-frame">
-      <div class="notch"></div>
-      <div class="phone-screen">
-        <div class="screen-pane active" data-screen="signin" style="background:#fff;align-items:center;justify-content:center;padding:28px 20px;text-align:center;gap:12px;">
-          <div style="width:60px;height:60px;border-radius:50%;background:#52b947;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:1.3rem;">ТЧ</div>
-          <div style="font-weight:700;font-size:1.1rem;color:#0088b4;">Tegsh Chanar</div>
-          <div style="color:#939598;font-size:0.78rem;margin-bottom:10px;">Урамшуулалын апп</div>
-          <div style="width:100%;background:#f4f4f4;border-radius:8px;padding:10px 12px;font-size:0.8rem;color:#333;text-align:left;">Утасны дугаар</div>
-          <div style="width:100%;background:#f4f4f4;border-radius:8px;padding:10px 12px;font-size:0.8rem;color:#333;text-align:left;">Нууц үг</div>
-          <div style="width:100%;background:#52b947;color:#fff;border-radius:8px;padding:10px;font-weight:700;font-size:0.85rem;margin-top:10px;">Нээх</div>
-        </div>
-        <div class="screen-pane" data-screen="scanner" style="background:#111;color:#fff;align-items:center;justify-content:center;position:relative;">
-          <div style="position:absolute;top:16px;left:0;right:0;text-align:center;font-size:0.8rem;color:#ddd;">Кодоо уншуулна уу</div>
-          <div style="width:70%;aspect-ratio:1;border:3px solid #52b947;border-radius:18px;"></div>
-          <div style="position:absolute;bottom:20px;left:16px;right:16px;background:#1a1a1a;border-radius:10px;padding:10px;font-size:0.72rem;color:#ccc;text-align:center;">
-            Анхаар! Тохиргоог нээх · Дараа болох
-          </div>
-        </div>
-        <div class="screen-pane" data-screen="won" style="background:#fff8e6;align-items:center;justify-content:center;text-align:center;padding:20px;gap:10px;">
-          <div style="font-size:2.4rem;">🎉</div>
-          <div style="font-weight:800;font-size:1.2rem;color:#d99a00;">Та хожлоо!</div>
-          <div style="color:#939598;font-size:0.78rem;">Шагналын урамшуулал таны бүртгэлд нэмэгдлээ</div>
-          <div style="width:100%;background:#52b947;color:#fff;border-radius:8px;padding:10px;font-weight:700;font-size:0.85rem;margin-top:10px;">Урамшуулал үзэх</div>
-        </div>
-      </div>
-    </div>
-    <div class="caption">
-      <div class="phone-tabs">
-        <button class="active" data-target="signin">Sign In</button>
-        <button data-target="scanner">Scanner</button>
-        <button data-target="won">You Won</button>
-      </div>
-      <p>
-        Recreated from the app's real screens, brand colors, and Mongolian copy
-        (<code>components/SignIn.js</code>, <code>components/Scanner.js</code>) — the actual
-        React Native/Expo build depends on a private production API and device camera, so this
-        static walkthrough stands in for a live install. Tap the buttons above to switch screens.
-      </p>
-    </div>
+  <div class="iframe-wrap">
+    <iframe src="/projects/demos/#/tegsh-chanar" loading="lazy" title="Tegsh Chanar promo app replica"></iframe>
   </div>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
+    ↑ A working React + Tailwind replica — tap "scan a code", run the scanner to get a random
+    win/lose result, and check your tickets. Brand colors and Mongolian copy match the original.
+  </p>
 </div>
 
 <div class="case-body container">

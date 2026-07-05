@@ -32,50 +32,23 @@
 </section>
 
 <div class="container">
-  <div class="mobile-demo">
-    <div class="phone-frame">
-      <div class="notch"></div>
-      <div class="phone-screen">
-        <div class="screen-pane active" data-screen="signin" style="background:#0b0d12;color:#fff;align-items:center;justify-content:center;padding:28px 20px;text-align:center;gap:14px;">
-          <div style="width:56px;height:56px;border-radius:16px;background:#e3b341;display:flex;align-items:center;justify-content:center;font-weight:800;color:#14120a;font-size:1.4rem;margin-bottom:6px;">SK</div>
-          <div style="font-weight:700;font-size:1.15rem;">SkyKing</div>
-          <div style="color:#8b93a7;font-size:0.8rem;margin-bottom:14px;">Guard sign-in</div>
-          <div style="width:100%;text-align:left;font-size:0.75rem;color:#8b93a7;">Email</div>
-          <div style="width:100%;background:#171b24;border:1px solid #2a2e3a;border-radius:8px;padding:9px 12px;font-size:0.8rem;color:#e8eaf0;">guard04@skyking.mn</div>
-          <div style="width:100%;text-align:left;font-size:0.75rem;color:#8b93a7;margin-top:8px;">Password</div>
-          <div style="width:100%;background:#171b24;border:1px solid #2a2e3a;border-radius:8px;padding:9px 12px;font-size:0.8rem;color:#e8eaf0;">••••••••</div>
-          <div style="width:100%;background:#e3b341;color:#14120a;border-radius:8px;padding:10px;font-weight:700;font-size:0.85rem;margin-top:14px;">Sign In</div>
-        </div>
-        <div class="screen-pane" data-screen="posts" style="background:#f5f6f8;">
-          <div style="background:#0b0d12;color:#fff;padding:16px;font-weight:700;">My Posts</div>
-          <div style="padding:14px;display:flex;flex-direction:column;gap:10px;overflow:auto;">
-            <div style="background:#fff;border:1px solid #e3e5ea;border-radius:12px;padding:12px;">
-              <div style="font-weight:700;font-size:0.85rem;">Central Plaza — Night Shift</div>
-              <div style="color:#8b93a7;font-size:0.72rem;margin:4px 0 8px;">22:00 – 06:00</div>
-              <div style="background:#e3b341;color:#14120a;border-radius:6px;padding:7px;text-align:center;font-size:0.75rem;font-weight:700;">Check In</div>
-            </div>
-            <div style="background:#fff;border:1px solid #e3e5ea;border-radius:12px;padding:12px;">
-              <div style="font-weight:700;font-size:0.85rem;">Warehouse District — Day Shift</div>
-              <div style="color:#8b93a7;font-size:0.72rem;margin:4px 0 8px;">08:00 – 16:00</div>
-              <div style="background:#eee;color:#8b93a7;border-radius:6px;padding:7px;text-align:center;font-size:0.75rem;font-weight:700;">Checked In ✓</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="caption">
-      <div class="phone-tabs">
-        <button class="active" data-target="signin">Sign In</button>
-        <button data-target="posts">Guard's Posts</button>
-      </div>
-      <p>
-        Recreated from the app's real screens and copy (<code>Components/Account/SignIn.js</code>,
-        <code>Components/MainApp/GuardMain.js</code>) — the actual React Native/Expo build depends on a
-        private production API, so this static walkthrough stands in for a live install.
-        Tap the buttons above to switch screens.
-      </p>
-    </div>
+  <h2 style="font-size:1rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-dim);margin:8px 0 12px;">Guard mobile app — interactive</h2>
+  <div class="iframe-wrap">
+    <iframe src="/projects/demos/#/skyking" loading="lazy" title="SkyKing guard app replica"></iframe>
   </div>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
+    ↑ A working React + Tailwind replica — open a post, tap "confirm location &amp; check in" to
+    see the GPS-verified check-in, and switch to the alerts tab.
+  </p>
+
+  <h2 style="font-size:1rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--text-dim);margin:8px 0 12px;">Admin panel — interactive</h2>
+  <div class="iframe-wrap">
+    <iframe src="/projects/demos/#/skyking-admin" loading="lazy" title="SkyKing admin replica"></iframe>
+  </div>
+  <p style="color:var(--text-dim);font-size:0.85rem;margin:-12px 0 24px;">
+    ↑ A working replica of the dispatch dashboard — live post map, guards roster, shift board,
+    and alerts.
+  </p>
 </div>
 
 <div class="case-body container">
