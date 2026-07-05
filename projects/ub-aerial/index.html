@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>UB Aerial — Case Study</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/">Bileg Avarga</a>
+    <nav>
+      <a href="/#work">Work</a>
+      <a href="https://github.com/avarga-byte" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="container">
+    <a class="back" href="/#work">← All projects</a>
+    <div class="tags" style="margin-top:16px;"><span class="tag web">Web App</span></div>
+    <h1>UB Aerial</h1>
+    <p class="tagline">
+      A production-ready marketplace for purchasing high-resolution drone survey imagery
+      of Ulaanbaatar, Mongolia.
+    </p>
+  </div>
+</section>
+
+<div class="case-body container">
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Users search the map, draw a selection polygon over the area they need, preview
+        pricing, pay with Stripe, and download processed GeoTIFF/PNG/JPG exports of drone
+        survey imagery. This is the most architecturally ambitious project in the portfolio —
+        a real asynchronous processing pipeline, not just a CRUD app.
+      </p>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <ul class="features">
+        <li>The React + OpenLayers frontend lets a user draw an area of interest on a map
+          and get a live price quote before paying.</li>
+        <li>A Fastify API handles auth (JWT) and payments (Stripe), and writes the order into
+          PostgreSQL with PostGIS for the spatial data.</li>
+        <li>Orders are queued in Redis via BullMQ rather than processed inline, so large
+          exports don't block the API.</li>
+        <li>A Node.js worker picks up queued jobs and hands raster processing to a Python
+          worker running GDAL, which clips and reprojects the requested imagery.</li>
+        <li>Finished exports are pushed to DigitalOcean Spaces and served to the user through
+          a Cloudflare CDN.</li>
+        <li>The whole stack — frontend, API, workers, Postgres, Redis, and an nginx reverse
+          proxy — is defined in Docker Compose, with a separate production compose file.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why it's interesting</h2>
+      <p>
+        It's a genuine job-queue architecture: web request → queue → background worker →
+        specialized processing (GDAL) → CDN delivery, with real payment handling and
+        geospatial data (PostGIS) rather than a flat database. It also ships with a written
+        DJI upload guide for the operational side of getting drone captures into the pipeline.
+      </p>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+    <div class="box">
+      <h3>Tech Stack</h3>
+      <div class="stack">
+        <span class="chip">React</span>
+        <span class="chip">OpenLayers</span>
+        <span class="chip">Fastify</span>
+        <span class="chip">PostgreSQL + PostGIS</span>
+        <span class="chip">Redis / BullMQ</span>
+        <span class="chip">Python + GDAL</span>
+        <span class="chip">Stripe</span>
+        <span class="chip">Docker Compose</span>
+        <span class="chip">DigitalOcean Spaces</span>
+        <span class="chip">Cloudflare CDN</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="bar container">
+    <span>© <span id="year"></span> Bileg Avarga</span>
+    <span><a href="https://github.com/avarga-byte" target="_blank" rel="noopener">github.com/avarga-byte</a></span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

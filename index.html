@@ -1,1 +1,256 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" type="image/png" href="/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Hachioji Resthub</title><script defer="defer" src="/static/js/main.5cdd1b10.js"></script><link href="/static/css/main.f855e6bc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bileg Avarga — Architect &amp; Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Bileg Avarga: architecture, web apps, mobile apps, and admin panels." />
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/">Bileg Avarga</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#early-work">Early Work</a>
+      <a href="https://github.com/avarga-byte" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Architect &amp; Full-Stack Developer</h1>
+    <p class="lede">
+      I design buildings and I build the software that runs real businesses and public services —
+      from a wellness-center concept in Hachioji, to a drone-imagery marketplace and a district
+      e-government platform in Ulaanbaatar. This page collects the projects behind that work:
+      web apps, mobile apps, admin panels, and architecture.
+    </p>
+    <div class="links">
+      <a class="pill-link" href="https://github.com/avarga-byte" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="pill-link" href="https://www.geo-mongol.mn/" target="_blank" rel="noopener">geo-mongol.mn ↗</a>
+    </div>
+  </div>
+</section>
+
+<div id="work"></div>
+<div class="filters container">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="architecture">Architecture</button>
+  <button class="filter-btn" data-filter="web">Web Apps</button>
+  <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+  <button class="filter-btn" data-filter="admin">Admin Panels</button>
+</div>
+
+<div class="grid container">
+
+  <!-- Hachioji Resthub -->
+  <article class="card" data-cat="architecture">
+    <div class="tags"><span class="tag architecture">Architecture</span></div>
+    <h3>Hachioji Resthub</h3>
+    <p class="desc">
+      A wellness center concept for working adults in Hachioji, Tokyo — site area 1,997m²,
+      floor area 1,364m². Full architectural design with an interactive 3D walkthrough
+      (rotate, pan, zoom) of all three floors, plus floor plans and elevations.
+    </p>
+    <div class="stack">
+      <span class="chip">Three.js</span>
+      <span class="chip">FBX 3D models</span>
+      <span class="chip">React</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/hachioji-resthub/">Open 3D model →</a>
+      <span class="badge-live" style="margin-left:auto;align-self:center;">Live</span>
+    </div>
+  </article>
+
+  <!-- Geo Mongol -->
+  <article class="card" data-cat="web admin">
+    <div class="tags"><span class="tag web">Web App</span><span class="tag admin">Admin Panel</span></div>
+    <h3>Geo Mongol</h3>
+    <p class="desc">
+      Full-stack platform for a geodesy &amp; land-surveying engineering company: public site,
+      client portal, webshop, and an internal lab module, with interactive maps, multi-language
+      support, and PDF report generation. Live in production.
+    </p>
+    <div class="stack">
+      <span class="chip">React</span>
+      <span class="chip">Node/Express</span>
+      <span class="chip">Mapbox</span>
+      <span class="chip">i18next</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/geo-mongol/">Case study →</a>
+      <a class="link-secondary" href="https://www.geo-mongol.mn/" target="_blank" rel="noopener">Live site ↗</a>
+    </div>
+  </article>
+
+  <!-- UB Aerial -->
+  <article class="card" data-cat="web">
+    <div class="tags"><span class="tag web">Web App</span></div>
+    <h3>UB Aerial</h3>
+    <p class="desc">
+      Drone-imagery marketplace for Ulaanbaatar. Draw a polygon on the map, preview pricing,
+      pay with Stripe, and download processed GeoTIFF/PNG/JPG exports of high-resolution
+      aerial survey data.
+    </p>
+    <div class="stack">
+      <span class="chip">React + OpenLayers</span>
+      <span class="chip">Fastify</span>
+      <span class="chip">PostGIS</span>
+      <span class="chip">Python/GDAL</span>
+      <span class="chip">Stripe</span>
+      <span class="chip">Docker</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/ub-aerial/">Case study →</a>
+    </div>
+  </article>
+
+  <!-- NalaikhNet -->
+  <article class="card" data-cat="web mobile admin">
+    <div class="tags"><span class="tag web">Web App</span><span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span></div>
+    <h3>NalaikhNet Civic Platform</h3>
+    <p class="desc">
+      District e-government platform: public news &amp; announcements portal, citizen complaint
+      and Q&amp;A submission, a companion mobile app, a citizen registration module, and an
+      admin dashboard to manage it all.
+    </p>
+    <div class="stack">
+      <span class="chip">React</span>
+      <span class="chip">React Native/Expo</span>
+      <span class="chip">Express</span>
+      <span class="chip">MongoDB</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/nalaikh-net/">Case study →</a>
+    </div>
+  </article>
+
+  <!-- SkyKing Security -->
+  <article class="card" data-cat="mobile admin">
+    <div class="tags"><span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span></div>
+    <h3>SkyKing Security Patrol</h3>
+    <p class="desc">
+      Guard patrol management system: a mobile app for security guards to check in at posts
+      via GPS-verified map confirmation and manage shift handovers, paired with an admin
+      panel tracking guards, posts, shifts, alerts, and customer sites.
+    </p>
+    <div class="stack">
+      <span class="chip">React Native/Expo</span>
+      <span class="chip">Expo Camera</span>
+      <span class="chip">Node/Express</span>
+      <span class="chip">MongoDB</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/skyking-security/">Case study →</a>
+    </div>
+  </article>
+
+  <!-- Tegsh Chanar -->
+  <article class="card" data-cat="mobile admin">
+    <div class="tags"><span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span></div>
+    <h3>Tegsh Chanar Promotions</h3>
+    <p class="desc">
+      Consumer promotion app: scan a code on a product to enter a prize drawing, track your
+      raffle tickets, and get push notifications on results — backed by an admin panel for
+      managing banners, tickets, and store locations.
+    </p>
+    <div class="stack">
+      <span class="chip">React Native/Expo</span>
+      <span class="chip">Barcode Scanner</span>
+      <span class="chip">Push Notifications</span>
+      <span class="chip">Express</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/tegsh-chanar/">Case study →</a>
+    </div>
+  </article>
+
+  <!-- Exchange -->
+  <article class="card" data-cat="web admin">
+    <div class="tags"><span class="tag web">Web App</span><span class="tag admin">Admin Panel</span></div>
+    <h3>Exchange Office Manager</h3>
+    <p class="desc">
+      Operations dashboard for a currency exchange business: live exchange-rate management,
+      accountancy ledgers, and expense tracking across branches, running in production.
+    </p>
+    <div class="stack">
+      <span class="chip">React</span>
+      <span class="chip">Redux</span>
+      <span class="chip">Node/Express</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/exchange-office/">Case study →</a>
+    </div>
+  </article>
+
+  <!-- Nehemj -->
+  <article class="card" data-cat="web">
+    <div class="tags"><span class="tag web">Web App</span></div>
+    <h3>Nehemj Invoicing</h3>
+    <p class="desc">
+      Contract, invoice, and payment management tool with official stamp/seal generation and
+      PDF export — built to replace manual paperwork for a services business.
+    </p>
+    <div class="stack">
+      <span class="chip">React</span>
+      <span class="chip">react-to-pdf</span>
+      <span class="chip">docx generation</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/nehemj-invoicing/">Case study →</a>
+    </div>
+  </article>
+
+  <!-- Lotta Dogs -->
+  <article class="card" data-cat="web">
+    <div class="tags"><span class="tag web">Web App</span></div>
+    <h3>Lotta Dogs</h3>
+    <p class="desc">
+      A dog-adoption &amp; breed browsing app — search breeds, meet a random dog, and sign up
+      for an account. A smaller, self-contained project you can click into and use live.
+    </p>
+    <div class="stack">
+      <span class="chip">React</span>
+      <span class="chip">React Router</span>
+      <span class="chip">Public Dog API</span>
+    </div>
+    <div class="actions">
+      <a class="link-primary" href="/projects/lotta-dogs/">Open live demo →</a>
+      <span class="badge-live" style="margin-left:auto;align-self:center;">Live</span>
+    </div>
+  </article>
+
+</div>
+
+<div id="early-work"></div>
+<div class="early-work container">
+  <h2>Early Work &amp; Learning Projects</h2>
+  <p class="intro">
+    Smaller projects and practice builds from earlier on — kept here for the record rather
+    than written up as full case studies.
+  </p>
+  <div class="early-grid">
+    <div class="early-item"><strong>Native CRUD App</strong><span>React Native + Express learning project (users, todos, posts)</span></div>
+    <div class="early-item"><strong>Complete / Complete v2</strong><span>Create React App UI-kit practice with a rich-text editor</span></div>
+    <div class="early-item"><strong>Animation Experiments</strong><span>React Native animation practice</span></div>
+    <div class="early-item"><strong>React Tutorial</strong><span>Following along with React fundamentals</span></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="bar container">
+    <span>© <span id="year"></span> Bileg Avarga</span>
+    <span><a href="https://github.com/avarga-byte" target="_blank" rel="noopener">github.com/avarga-byte</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="/assets/site.js"></script>
+</body>
+</html>
