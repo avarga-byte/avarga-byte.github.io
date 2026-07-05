@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/projects/lotta-dogs/static/css/main.b377040d.chunk.css",
+    "main.js": "/projects/lotta-dogs/static/js/main.1e67c5df.chunk.js",
+    "main.js.map": "/projects/lotta-dogs/static/js/main.1e67c5df.chunk.js.map",
+    "runtime-main.js": "/projects/lotta-dogs/static/js/runtime-main.0187fa80.js",
+    "runtime-main.js.map": "/projects/lotta-dogs/static/js/runtime-main.0187fa80.js.map",
+    "static/js/2.1db219b2.chunk.js": "/projects/lotta-dogs/static/js/2.1db219b2.chunk.js",
+    "static/js/2.1db219b2.chunk.js.map": "/projects/lotta-dogs/static/js/2.1db219b2.chunk.js.map",
+    "index.html": "/projects/lotta-dogs/index.html",
+    "static/css/main.b377040d.chunk.css.map": "/projects/lotta-dogs/static/css/main.b377040d.chunk.css.map",
+    "static/js/2.1db219b2.chunk.js.LICENSE.txt": "/projects/lotta-dogs/static/js/2.1db219b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0187fa80.js",
+    "static/js/2.1db219b2.chunk.js",
+    "static/css/main.b377040d.chunk.css",
+    "static/js/main.1e67c5df.chunk.js"
+  ]
+}

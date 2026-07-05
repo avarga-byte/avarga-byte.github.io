@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SkyKing Security Patrol — Case Study</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/">Bileg Avarga</a>
+    <nav>
+      <a href="/#work">Work</a>
+      <a href="https://github.com/avarga-byte" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="container">
+    <a class="back" href="/#work">← All projects</a>
+    <div class="tags" style="margin-top:16px;"><span class="tag mobile">Mobile App</span><span class="tag admin">Admin Panel</span></div>
+    <h1>SkyKing Security Patrol</h1>
+    <p class="tagline">
+      A guard patrol management system: a mobile app for security guards to check in at their
+      posts, and an admin panel for the security company to oversee guards, sites, and incidents.
+    </p>
+  </div>
+</section>
+
+<div class="case-body container">
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Built for a security services company, this system replaces paper patrol logs with a
+        mobile check-in flow and a live admin view of every guard post.
+      </p>
+    </section>
+
+    <section>
+      <h2>What it does</h2>
+      <ul class="features">
+        <li>Guards sign in to a dedicated mobile screen showing their assigned posts.</li>
+        <li>Checking in at a post requires confirming location on a map, so a check-in can't
+          be faked from off-site.</li>
+        <li>Shift handovers between guards are tracked in-app.</li>
+        <li>The admin panel manages guards, guard posts, shift turns, customer sites, and
+          alerts, with a full production dataset behind it (guards, posts, shifts, and
+          customer records).</li>
+        <li>An invoicing companion tool (see <a class="link-primary" href="/projects/nehemj-invoicing/">Nehemj</a>)
+          generates the contracts and invoices for the security company's clients.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why it's interesting</h2>
+      <p>
+        The GPS-verified check-in is the detail that makes this a real operations tool rather
+        than a todo-list app — it directly addresses the thing paper patrol logs can't prove:
+        that the guard was actually at the post.
+      </p>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+    <div class="box">
+      <h3>Tech Stack</h3>
+      <div class="stack">
+        <span class="chip">React Native / Expo</span>
+        <span class="chip">Expo Camera</span>
+        <span class="chip">Maps / Geolocation</span>
+        <span class="chip">Node/Express</span>
+        <span class="chip">MongoDB</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="bar container">
+    <span>© <span id="year"></span> Bileg Avarga</span>
+    <span><a href="https://github.com/avarga-byte" target="_blank" rel="noopener">github.com/avarga-byte</a></span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

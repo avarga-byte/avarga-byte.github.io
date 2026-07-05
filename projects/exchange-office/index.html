@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Exchange Office Manager — Case Study</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/">Bileg Avarga</a>
+    <nav>
+      <a href="/#work">Work</a>
+      <a href="https://github.com/avarga-byte" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="container">
+    <a class="back" href="/#work">← All projects</a>
+    <div class="tags" style="margin-top:16px;"><span class="tag web">Web App</span><span class="tag admin">Admin Panel</span></div>
+    <h1>Exchange Office Manager</h1>
+    <p class="tagline">
+      An operations dashboard for a currency exchange business — rates, accountancy, and
+      expenses in one place.
+    </p>
+  </div>
+</section>
+
+<div class="case-body container">
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Built for a currency exchange office, this dashboard replaces spreadsheets with a
+        single system for the day-to-day of running an exchange counter. It has production
+        access logs from real use.
+      </p>
+    </section>
+
+    <section>
+      <h2>What it does</h2>
+      <ul class="features">
+        <li>Staff log in and manage live exchange rates against a full currency and bank list.</li>
+        <li>An accountancy module tracks the office's books.</li>
+        <li>An expense module records day-to-day operating costs.</li>
+        <li>A dashboard view surfaces the numbers that matter for daily operations at a glance.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why it's interesting</h2>
+      <p>
+        It's a domain-specific back-office tool — currency exchange has its own accounting
+        conventions, and the routes are organized around admin, accountancy, exchange, and
+        expense rather than a generic CRUD structure.
+      </p>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+    <div class="box">
+      <h3>Tech Stack</h3>
+      <div class="stack">
+        <span class="chip">React</span>
+        <span class="chip">Tailwind CSS</span>
+        <span class="chip">Node/Express</span>
+        <span class="chip">MongoDB</span>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="bar container">
+    <span>© <span id="year"></span> Bileg Avarga</span>
+    <span><a href="https://github.com/avarga-byte" target="_blank" rel="noopener">github.com/avarga-byte</a></span>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
