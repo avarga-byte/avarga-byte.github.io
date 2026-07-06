@@ -155,6 +155,9 @@ a { color: inherit; }
 .sidebar .stack { display: flex; gap: 6px; flex-wrap: wrap; }
 .iframe-wrap { border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #fff; margin: 20px 0; box-shadow: 0 16px 34px -24px rgba(80,55,20,.7); }
 .iframe-wrap iframe { width: 100%; height: 640px; border: 0; display: block; }
+/* phone-app demos need more vertical room for the device frame */
+.iframe-wrap.phone { background: #d9d3c7; }
+.iframe-wrap.phone iframe { height: 780px; }
 
 @media (max-width: 800px) {
   .case-body { grid-template-columns: 1fr; }
